@@ -1,0 +1,260 @@
+
+/* Basic
+--------------------------------------------------*/
+:root{
+  font-size:24px;
+}
+
+body{
+  background-color: #fff;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size:0.583rem;
+  color: #666;
+  letter-spacing: 1px;
+  line-height:1rem;
+}
+
+.container{
+  padding: 0 20px;
+}
+
+h1{font-size:0.816rem}
+h2{font-size:0.708rem}
+h3,
+h4,
+h5,
+h6{font-size:0.667rem}
+
+header a, header a:visited,
+main#index a, main#index a:visited,
+main#list a, main#list a:visited{ color: #666; }
+
+article a, article a:visited,
+footer a, article a:visited{ color: #29abe2; }
+
+header a:hover,
+article a:hover,
+main#index a:hover,
+main#list a:hover,
+nav a:hover{ color: #29abe2; }
+
+main#index .meta a,
+main#list .meta a,
+main#single .meta a{ color: #999; }
+
+main#index .meta a:hover,
+main#list .meta a:hover,
+main#single .meta a:hover{ color: #29abe2; }
+
+article a:hover,
+footer a:hover{ text-decoration: underline; }
+
+ul, ol{
+  margin: 1rem 0 1rem 1.5rem;
+}
+
+pre{
+  margin: 1rem 0;
+}
+
+table{
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+th{
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+}
+
+td{
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+.button{
+  background-color:#333;
+  padding:4px 7px 3px 7px;
+  font-size:0.5rem;
+  border-radius:3px 3px 3px 3px;
+  -moz-border-radius:3px 3px 3px 3px;
+  -webkit-border-radius:3px 3px 3px 3px;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  -o-transition:all 0.3s ease;
+  transition:all  0.3s ease;
+}
+
+.button{
+  color:#fff;
+}
+
+.button:hover{
+  background-color:#29abe2;
+  color:#fff;
+}
+
+
+/* Header
+--------------------------------------------------*/
+header{
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+header h2{
+  font-size: 0.5rem;
+}
+
+header #social{
+  text-align: right;
+}
+
+header #social ul{
+  font-size: 0;
+  margin: 0;
+}
+
+header #social li{
+  display: inline-block;
+  font-size: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+header #social li:first-child{
+  padding-left: 0;
+}
+
+header #social li + li{
+  border-left: 1px solid #ccc;
+}
+
+header #social li:last-child{
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  header h1, header h2{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  header #social{
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+/* Comment
+--------------------------------------------------*/
+#disqus_thread{
+  margin-top: 3rem;
+}
+
+/* Footer
+--------------------------------------------------*/
+footer{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+footer img{
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  footer{
+    margin: 2rem 0;
+  }
+}
+
+
+
+
+/* Single Page
+--------------------------------------------------*/
+article h1{
+  margin: 1rem 0 1rem 0;
+}
+
+article h2{
+  border-bottom: 2px solid #ddd;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+}
+
+article h3,
+article h4,
+article h5,
+article h6{
+  margin: 2rem 0 1rem 0;
+}
+
+article p{
+  margin: 1rem 0;
+}
+
+article code{
+  color: #333;
+  background-color: #eee;
+  padding: 0 3px;
+  margin: 0 3px;
+  border: 1px solid #ccc;
+  font-family: consolas, "Courier New", monospace;
+}
+
+article pre code{
+  font-family: consolas, "Courier New", monospace;
+}
+
+
+article blockquote{
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+}
+
+
+/* Common
+--------------------------------------------------*/
+.article-header{
+  border-left: 4px solid #29abe2;
+  margin: 0 0 1rem -4px;
+  padding: 5px 0 5px 10px;
+}
+
+.light-gray{
+  color: #999;
+}
+
+.summary{
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.5rem;
+}
+
+.meta{
+  color: #999;
+  font-size: 0.5rem;
+}
+
+.summary .meta{
+  margin-bottom:0.5rem;
+}
+
